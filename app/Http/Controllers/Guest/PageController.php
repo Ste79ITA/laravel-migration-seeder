@@ -11,8 +11,7 @@ class PageController extends Controller
 
     public function index()
     {
-        $currDate = date('Y-m-d');
-        $trains = Train::where('giorno', '>=', $currDate)->orderBy('orario_di_partenza', 'asc')->get();
+        $trains = Train::all()->sortBy('orario_di_partenza');
 
         return view('index', compact('trains'));
     }

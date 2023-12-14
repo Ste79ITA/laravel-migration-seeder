@@ -13,7 +13,6 @@
             <th scope="col">Azienda</th>
             <th scope="col">Stazione di Partenza</th>
             <th scope="col">Stazione di Arrivo</th>
-            <th scope="col">Giorno</th>
             <th scope="col">Orario di Partenza</th>
             <th scope="col">Oririo di Arrivo</th>
             <th scope="col">Codice Treno</th>
@@ -28,7 +27,6 @@
             <td>{{ $train->azienda }}</td>
             <td>{{ $train->stazione_di_partenza }}</td>
             <td>{{ $train->stazione_di_arrivo }}</td>
-            <td>{{ $train->giorno }}</td>
             <td>{{ $train->orario_di_partenza }}</td>
             <td>{{ $train->orario_di_arrivo }}</td>
             <td>{{ $train->codice_treno }}</td>
