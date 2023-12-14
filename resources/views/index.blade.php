@@ -31,8 +31,8 @@
             <td>{{ $train->orario_di_arrivo }}</td>
             <td>{{ $train->codice_treno }}</td>
             <td>{{ $train->numero_carrozze }}</td>
-            <td>{{ $train->in_orario }}</td>
-            <td>{{ $train->cancellato }}</td>
+            <td>{{ $train->in_orario == 0 ? 'No' : 'Si'}}</td>
+            <td>{{ $train->cancellato == 0 ? 'No' : 'Si'}}</td>
           </tr>
           @endforeach
           
